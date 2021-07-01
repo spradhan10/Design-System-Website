@@ -2,7 +2,7 @@
 <html lang="en"> 
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" type="css/text" href="styles.css">
+        <link href="./styles.css" rel="stylesheet"  >
         <title>Design System</title>
     </head>
     <body>
@@ -20,17 +20,153 @@
         
         </header>
         <article>
+    <!--Box Model section      -->
             <section id="boxModel">
-
+                <h2>CSS Box Model</h2>
+                
 
             </section>
-            <section id="displayPosition">
+    
+    <!-- Disaplay & Position section -->
+            <section id="display">
+                <h2>Display & Position</h2>
+                <p>The <code>position</code> propety allows you to specify the posiion of an element. <br>
+                    the type of position are: </p>
+                    <!-- <ul>
+                        <li><code>relative</code>
+                        <li><code>absolute</code></li>
+                        <li><code>fixed</code></li>
+                        <li><code>sticky</code></li>
+                        <li><code>z-index</code></li>
+                        <li><code>display</code></li>
+                        <li><code>inline</code></li>
+                        <li><code>block</code></li>
+                        <li><code>inline-block</code></li>
+                        <li><code>float</code></li>
+                        <li><code>clear</code></li>
+                    </ul> -->
+                    <table>
+                        <tr>
+                            <th>position</th>
+                            <th>definition</th>
+                            <th>example </th>
+                        </tr>
+                        <tr>
+                            <td><code>relative</code></td>
+                            <td><p>When set to relative, an element's position is relative to its default position on the page</p></td>
+                            <td><code>p{<br>
+                                position: relative;<br>
+                            }
+                            </code></td>
+                        </tr>
+                        <tr>
+                            <td><code>absolute</code></td>
+                            <td><p>When set to absolute, an element's position is relative to its closest positioned parent element. 
+                                It can be pinned to any part of the web page, but the element will still move with the rest of the 
+                                doucment when the page is scrolled.</p></td>
+                            <td><code>p{<br>
+                                position: absolute;<br>
+                                width: 100%<br>
+                            }
+                            
+                        </code></td>
+                        </tr>
+                        <tr>
+                            <td><code>fixed</code></td>
+                            <td><p>When set to fixed, an element's position can be pinned to any pat of the web page.
+                                The element will remain in view no matter what. </p></td>
+                            <td><code>nav{<br>
+                                position: fixed;<br>
+                            }
+                            </code></td>
+                        </tr>
+                        <tr>
+                            <td><code>sticky</code></td>
+                            <td><p>When set to sticky, an element can stick to a defined offset position when the user scrolls its parent container.</p></td>
+                            <td><code>.question{<br>
+                                text-align: center;<br>
+                                position: sticky;<br>
+                                top: 40px;<br>
+                            }
+                            </code></td>
+                        </tr>
+                        <tr>
+                            <td><code>z-index</code></td>
+                            <td>The z-index of an element specifies how far back or how far forward an element appers on the page when it overlaps other elements.</td>
+                            <td><code>.blue-box {,<br>
+                                background-color: blue;<br>
+                                position: relative;<br>
+                                z-index: 1;<br>
+                              }<br>
+                               
+                              .green-box {<br>
+                                background-color: green;<br>
+                                position: relative;<br>
+                                top: -170px;<br>
+                                left: 170px;<br>
+                              }</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>display</code></td>
+                            <td>The display propety allows you to control how an element flows vertically and horizontally a document.</td>
+                            <td><code>container1 {<br>
+                                display: block;<br>
+                              }<br>
+                              //block elements take up as the width of their container and can have manually adjusted heights.
+                              <br>
+                              <br>
+                              .container2 {<br>
+                                display: inline;<br>
+                              }<br>
+                              //inline elements take up as little apace as possible, and they cannot have manually adjusted width or height.
+                              <br>
+                              <br>
+                              .container3 {<br>
+                                display: inline-block;<br>  
+                              }<br>
+                              //inline-block elements can have set width and height, but they can also appear next each other and do not take up their entire container width.
+                            </code></td>
+                        </tr>
+                        <tr>
+                            <td><code>float</code></td>
+                            <td>The float property can move elements as far left or as far right as possible on a web page.</td>
+                            <td><code>p{<br>
+                            float: right;<br>
+                            }</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>clear</code></td>
+                            <td>You can clear an element's left or right side (or both) using the clear property.</td>
+                            <td><code>.element {<br>
+                                clear: left;<br>
+                              }<br>
+                              <br>
+                              .element {<br>
+                                clear: right;<br>
+                              }<br>
+                              <br>
+                              .element {<br>
+                                clear: both;<br>
+                              }<br>
+                              <br>
+                              .element {<br>
+                                clear: none;<br>
+                              }<br>
+                             
+                            </code></td>
+                        </tr>
+                    </table>
+    
+
 
             </section>
             <section id="color">
+                <h2>Colors</h2>
+
 
             </section>
             <section id="typo">
+                <h2>Typography</h2>
 
             </section>
         </article>
