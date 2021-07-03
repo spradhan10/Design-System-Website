@@ -1,11 +1,53 @@
 
 
+/* box model imag */
+#margin{
+    padding: 0 30px 30px 30px;
+    border: 10px #477AA5 dashed;
+    width: 700px;
+    height: 500px;
+    margin:10px;
+
+    
+
+}
+#border{
+    padding: 0 30px 30px 30px;
+    border:1px #9898Bc solid;
+    width:620px;
+    height: 370px;
+    background-color:#9799BA ;
+    margin:10px;
+
+   
+}
+#padding{
+    padding: 2px 30px 30px 50px;
+    background-color: #BC83A3;
+    width: 540px;
+    height: 260px;
+    
+
+}
+#content{
+    padding: 60px 30px 0px 30px;
+    background-color: #F4ABB7;
+    width: 450px;
+    height:130px;
+    text-align:center;
+}
+
+
+h3{
+    text-align:center;
+}
+/* end  */
+
+
  th, tr, td{
 
     border: 1px solid black;
     padding:10px;
-    
-   
-    
 
+   
 }
