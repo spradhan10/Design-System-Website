@@ -1,6 +1,69 @@
 
+/* header */
+ body{
+     padding: 0;
+    margin: 0; 
+    /* text-align: center; */
+}
+
+h1{
+    height: 150px;
+    width: 100%;
+    background-image: url(./bk2.jpeg);
+    background-position: center;
+    text-align: center;
+    background-size: cover;
+    padding-top: 40px;
+    color:azure;
+    position:relative;
+    top:44px;
+
+
+}
+
+nav{
+    background-color: #477AA5;
+    color:#F4ABB7; 
+    width: 100%;
+    position: fixed;
+    height: 65px;
+    z-index: 1;
+    top: 0px;
+ 
+    
+    
+ 
+}
+nav ul{
+    margin: 0;
+    padding: 10px;
+  
+}
+    
+
+li a {
+    color:#F4ABB7;
+    text-decoration: none;
+    
+}
+nav li{
+    text-align: center;
+    list-style: none;
+    display: inline-block;
+    width: 288px;
+    background-color: #477AA5;
+    height: 50px;
+    font-size: 25px;
+}
+
+
 
 /* box model imag */
+#boxModel h2{
+    color:#BC83A3;
+    font-size: 40px;
+}
+
 #margin{
     padding: 0 30px 30px 30px;
     border: 10px #477AA5 dashed;
@@ -44,6 +107,14 @@ h3{
 /* end  */
 
 
+
+
+
+
+
+
+/* display & position  */
+
  th, tr, td{
 
     border: 1px solid black;
@@ -51,3 +122,5 @@ h3{
 
    
 }
+
+/* end */
