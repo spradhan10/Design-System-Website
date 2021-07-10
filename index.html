@@ -23,6 +23,7 @@
     <!--Box Model section      -->
             <section id="boxModel">
                 <h2>CSS Box Model</h2>
+                <p>Below is the box model. Every element on the page is wraped around a box like the box below:</p>
 
                 <!-- box Model image-->
                 <div id="margin">
@@ -38,28 +39,89 @@
                     </div>
                 </div>
                 <!--end -->
+                <br>
+                <br>
+                <table>
+                    <tr>
+                        <th>code </th>
+                        <th> What it does</th>
+                    </tr>
+                    <tr>
+                        <td class="code"><code>
+                            div {<br>
+                            margin: auto;<br>
+                             }</code>
+                        </td>
+                        <td>if we use the value auto with margin, then the margin property will take the width of the element and will split the rest of the space equally between the left and right margins.</td>
+                    </tr>
+                    <tr>
+                        <td class="code"><code>
+                        .colum{<br>
+                            max-width: 200px;<br>
+                            width: 500px;<br>
+                            }
+                        </code></td>
+                        <td>The CSS min-width and min-height properties can be used to set a minimum width and minimum height of an element's box. same with the maximum.</td>
+                    </tr>
+                    <tr>
+                        <td class="code"><code>small-block{<br>
+                            overflow: scroll;<br>
+                        }
+                        </code></td>
+                        <td>If content is too large for its container, the CSS overflow property will determin how the browser handles the problem. By default, it will be set to visible and the content will take up extra space.
+                         It can also be set to hidden, or to scroll, which will make the overflowing content accessible via scroll bars within the original container.</td>
+                    </tr>
+                   <tr>
+                    <td class="code">
+                        <code> invisible-elements{<br>
+                            visibility:hidden;<br>
+                        }
 
+                        </code>
+                   </td>
+                   <td>
+                       The CSS visibility property is used to render hidden objects invisible to the user,
+                       without removing them from the page. This ensures that the page structure and organization 
+                       remain unchanged.
+                   </td>
+                    </tr>
+                    <tr>
+                        <td class="code"><code>.block-one {<br>
+                            margin: 20px;<br>
+                          }<br>
+                           <br>
+                          .block-two {<br>
+                            margin: 30px;<br>
+                          }</code></td>
+                          <td>
+                              CSS margin collapse occurs when the top and bottom margins of blocks are combined into a single margin equal to the largest individual block margin.
+                              Margin collapse only occurs with vertical margins, not for horizontal margins.
+                          </td>
+                    </tr>
+                    <tr>
+                        <td class="code"><code>.container {<br>
+                            box-sizing: border-box;<br>
+                          }</code></td>
+                          <td>The property box-sizing controls which aspect of the box is determined by the height and width properties.
+                              The default value of this propety is content-box, which renders the actual size of the element including the content box;
+                              but not the padding and borders. The value border-box, on the other hand, renders the actual size of an element including the content box, paddings, and borders.
+                              The value border-box of the box-sizing property for an element corresponds directly to the element's total rendered size, including padding and border with the height and width properties.
+                              The default value of the border-box property is content-box. The value border-box is recommended when it is necessary to resize the padding and border but not just the content. 
+                              For instance, the value border-box calculates an element's height as follows: height = content height + padding + border.
+                          </td>
+                    </tr>
+                    
+                </table>
 
             </section>
+            <br>
+            <br>
     
     <!-- Disaplay & Position section -->
             <section id="display">
                 <h2>Display & Position</h2>
-                <p>The <code>position</code> propety allows you to specify the posiion of an element. <br>
-                    the type of position are: </p>
-                    <!-- <ul>
-                        <li><code>relative</code>
-                        <li><code>absolute</code></li>
-                        <li><code>fixed</code></li>
-                        <li><code>sticky</code></li>
-                        <li><code>z-index</code></li>
-                        <li><code>display</code></li>
-                        <li><code>inline</code></li>
-                        <li><code>block</code></li>
-                        <li><code>inline-block</code></li>
-                        <li><code>float</code></li>
-                        <li><code>clear</code></li>
-                    </ul> -->
+                <p>The <code>position</code> propety allows you to specify the posiion of an element. The type of position are: </p>
+                    
                     <table>
                         <tr>
                             <th>position</th>
@@ -67,19 +129,19 @@
                             <th>example </th>
                         </tr>
                         <tr>
-                            <td><code>relative</code></td>
-                            <td><p>When set to relative, an element's position is relative to its default position on the page</p></td>
-                            <td><code>p{<br>
+                            <td class="code"><code>relative</code></td>
+                            <td>When set to relative, an element's position is relative to its default position on the page</td>
+                            <td class="code"><code>p{<br>
                                 position: relative;<br>
                             }
                             </code></td>
                         </tr>
                         <tr>
-                            <td><code>absolute</code></td>
-                            <td><p>When set to absolute, an element's position is relative to its closest positioned parent element. 
+                            <td class="code"><code>absolute</code></td>
+                            <td>When set to absolute, an element's position is relative to its closest positioned parent element. 
                                 It can be pinned to any part of the web page, but the element will still move with the rest of the 
-                                doucment when the page is scrolled.</p></td>
-                            <td><code>p{<br>
+                                doucment when the page is scrolled.</td>
+                            <td class="code"><code>p{<br>
                                 position: absolute;<br>
                                 width: 100%<br>
                             }
@@ -87,18 +149,18 @@
                         </code></td>
                         </tr>
                         <tr>
-                            <td><code>fixed</code></td>
-                            <td><p>When set to fixed, an element's position can be pinned to any pat of the web page.
-                                The element will remain in view no matter what. </p></td>
-                            <td><code>nav{<br>
+                            <td class="code"><code>fixed</code></td>
+                            <td>When set to fixed, an element's position can be pinned to any pat of the web page.
+                                The element will remain in view no matter what. </td>
+                            <td class="code"><code>nav{<br>
                                 position: fixed;<br>
                             }
                             </code></td>
                         </tr>
                         <tr>
-                            <td><code>sticky</code></td>
-                            <td><p>When set to sticky, an element can stick to a defined offset position when the user scrolls its parent container.</p></td>
-                            <td><code>.question{<br>
+                            <td class="code"><code>sticky</code></td>
+                            <td>When set to sticky, an element can stick to a defined offset position when the user scrolls its parent container.</td>
+                            <td class="code"><code>.question{<br>
                                 text-align: center;<br>
                                 position: sticky;<br>
                                 top: 40px;<br>
@@ -106,9 +168,9 @@
                             </code></td>
                         </tr>
                         <tr>
-                            <td><code>z-index</code></td>
+                            <td class="code"><code>z-index</code></td>
                             <td>The z-index of an element specifies how far back or how far forward an element appers on the page when it overlaps other elements.</td>
-                            <td><code>.blue-box {,<br>
+                            <td class="code"><code>.blue-box {,<br>
                                 background-color: blue;<br>
                                 position: relative;<br>
                                 z-index: 1;<br>
@@ -122,9 +184,9 @@
                               }</code></td>
                         </tr>
                         <tr>
-                            <td><code>display</code></td>
+                            <td class="code"><code>display</code></td>
                             <td>The display propety allows you to control how an element flows vertically and horizontally a document.</td>
-                            <td><code>container1 {<br>
+                            <td class="code"><code>container1 {<br>
                                 display: block;<br>
                               }<br>
                               //block elements take up as the width of their container and can have manually adjusted heights.
@@ -143,16 +205,17 @@
                             </code></td>
                         </tr>
                         <tr>
-                            <td><code>float</code></td>
+                            <td class="code"><code>float</code></td>
                             <td>The float property can move elements as far left or as far right as possible on a web page.</td>
-                            <td><code>p{<br>
+                            <td class="code"><code>p{<br>
                             float: right;<br>
                             }</code></td>
                         </tr>
                         <tr>
-                            <td><code>clear</code></td>
+                            <td class="code"><code>clear</code></td>
                             <td>You can clear an element's left or right side (or both) using the clear property.</td>
-                            <td><code>.element {<br>
+                            <td class="code"><code>
+                              .element {<br>
                                 clear: left;<br>
                               }<br>
                               <br>
@@ -166,25 +229,51 @@
                               <br>
                               .element {<br>
                                 clear: none;<br>
-                              }<br>
-                             
+                              }
+                            
                             </code></td>
                         </tr>
                     </table>
     
-
-
             </section>
+            <br>
+            <br>
             <section id="color">
                 <h2>Colors</h2>
-
-
+                <p> The new thing I learned form this section of CSS is the <code>hsla()</code>hue (the color value itself),saturation(intensity) and lightness.<br>
+                    Hue values range from 0 to 360 while saturation and lightness values are represented as percentages. example : <br>
+                    <code>.light-pink{<br>
+                        background-color: hsl(351, 100%, 86%);
+                        <br>
+                    }
+                    </code>
+                    <br>
+                    <div class= "light-pink"> </div>
+                </p>
             </section>
+            <br>
+            <br>
             <section id="typo">
                 <h2>Typography</h2>
+                <p>The new thing I learned form this section of CSS is the CSS @font-face rule.<br>
+                The CSS @font-face rule allows external fonts or font files to be imported directly into stylesheets. 
+                The location of the font file must be specified in the CSS rule so that the files can be loaded form the locaion. 
+                This rule also allows locally hosted fonts to be added using a relative file path instead of a web URL.<br><br>
+            <code>@font-face {<br>
+                font-family: 'Glegoo';<br>
+                src: url('../fonts/Glegoo-Regular.ttf') format('truetype');<br>
+              }</code>
+              <br>
+                CSS Linking fonts allow user to use web fonts in the document. They can be imported in an HTML document by using the link tag. 
+                  Once the web font URL is placed within the head section we can use it in the css document.
+              </p>
 
             </section>
+            <br>
+            <br>
         </article>
-        <footer></footer>
+        <footer>
+            <p> check out my gitHub </p>
+        </footer>
     </body>
 </html>
