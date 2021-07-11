@@ -3,6 +3,15 @@
     <head>
         <meta charset="UTF-8">
         <link href="./styles.css" rel="stylesheet"  >
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@100&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100&family=Encode+Sans+SC:wght@100&display=swap" rel="stylesheet">
         <title>Design System</title>
     </head>
     <body>
@@ -44,7 +53,7 @@
                 <table>
                     <tr>
                         <th>code </th>
-                        <th> What it does</th>
+                        <th> What the code do !</th>
                     </tr>
                     <tr>
                         <td class="code"><code>
@@ -68,7 +77,8 @@
                             overflow: scroll;<br>
                         }
                         </code></td>
-                        <td>If content is too large for its container, the CSS overflow property will determin how the browser handles the problem. By default, it will be set to visible and the content will take up extra space.
+                        <td>If content is too large for its container, the CSS overflow property will determin how the browser handles the problem. 
+                            By default, it will be set to visible and the content will take up extra space.
                          It can also be set to hidden, or to scroll, which will make the overflowing content accessible via scroll bars within the original container.</td>
                     </tr>
                    <tr>
@@ -120,7 +130,7 @@
     <!-- Disaplay & Position section -->
             <section id="display">
                 <h2>Display & Position</h2>
-                <p>The <code>position</code> propety allows you to specify the posiion of an element. The type of position are: </p>
+                <p>The <code>position</code> propety allows you to specify the position of an element. The type of position are: </p>
                     
                     <table>
                         <tr>
@@ -238,31 +248,36 @@
             </section>
             <br>
             <br>
+            <!-- color -->
             <section id="color">
                 <h2>Colors</h2>
                 <p> The new thing I learned form this section of CSS is the <code>hsla()</code>hue (the color value itself),saturation(intensity) and lightness.<br>
                     Hue values range from 0 to 360 while saturation and lightness values are represented as percentages. example : <br>
+                    <div class="block">
                     <code>.light-pink{<br>
                         background-color: hsl(351, 100%, 86%);
                         <br>
                     }
                     </code>
+                </div>
                     <br>
                     <div class= "light-pink"> </div>
                 </p>
             </section>
             <br>
-            <br>
+            <!-- Typography -->
             <section id="typo">
                 <h2>Typography</h2>
                 <p>The new thing I learned form this section of CSS is the CSS @font-face rule.<br>
                 The CSS @font-face rule allows external fonts or font files to be imported directly into stylesheets. 
                 The location of the font file must be specified in the CSS rule so that the files can be loaded form the locaion. 
                 This rule also allows locally hosted fonts to be added using a relative file path instead of a web URL.<br><br>
+                <div class="block">
             <code>@font-face {<br>
                 font-family: 'Glegoo';<br>
                 src: url('../fonts/Glegoo-Regular.ttf') format('truetype');<br>
               }</code>
+            </div>
               <br>
                 CSS Linking fonts allow user to use web fonts in the document. They can be imported in an HTML document by using the link tag. 
                   Once the web font URL is placed within the head section we can use it in the css document.
@@ -273,7 +288,10 @@
             <br>
         </article>
         <footer>
-            <p> check out my gitHub </p>
+            <p class="left">by Susan Pradhan <br>
+                ref:<a href="https://www.codecademy.com/learn/learn-css/modules/learn-css-selectors-visual-rules/cheatsheet">codecademy</a>
+            <p>
+            <p> Check out my <strong><a href="https://github.com/spradhan10">github</a></strong></p>
         </footer>
     </body>
 </html>

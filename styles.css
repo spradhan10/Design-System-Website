@@ -1,7 +1,19 @@
-
+@font-face {
+    font-family: 'ZenTokyo';
+    src: url('fonts2/ZenTokyoZoo-Regular.ttf');
+   
+}
+@font-face {
+    font-family: 'playfair-Bold';
+    src: url('fonts2/PlayfairDisplay-BlackItalic.ttf');
+}
+@font-face {
+    font-family: 'playfair';
+    src: url('fonts2/PlayfairDisplay-Italic.ttf');
+}
 
  body{
-     padding: 0 10px;
+     padding: 0;
     margin: 0; 
     text-align: center;
 }
@@ -10,19 +22,25 @@ p{
     font-size: 20px;
     text-align: left;
     margin: 0 90px;
+    font-family: playfair;
+    line-height: 23px;
+    letter-spacing: 1px;
 }
 /* header */
 h1{
-    height: 150px;
+    height: 200px;
     width: 100%;
     background-image: url(./bk2.jpeg);
     background-position: center;
     text-align: center;
     background-size: cover;
-    padding: 40px 0;
+    padding: 50px 0;
+    margin-top: 0;
     color:azure;
     position:relative;
     top:44px;
+    font-family: ZenTokyo;
+    font-size: 100px;
 
 
 }
@@ -35,12 +53,12 @@ nav{
     height: 65px;
     z-index: 1;
     top: 0px;
-    padding: 0 auto;
+    padding: 0 0 10px 0;
     
 }
 nav ul{
     margin: 0;
-    padding: 10px;
+    padding: 20px 0;
   
 }
     
@@ -55,19 +73,30 @@ nav li{
     list-style: none;
     display: inline-block;
     width: 288px;
-    /* background-color: #477AA5; */
-    height: 50px;
     font-size: 25px;
     overflow: scroll;
+    font-family: 'Encode Sans SC', sans-serif;
 }
 
 
 code{
     background-color: #415d74;
     color:#fddee3;
-    font-size: 18px;
+    font-size: 20px;
+    font-family: 'Encode Sans Expanded', sans-serif;
 }
+.block{
+    background-color: #415d74;
+    text-align: left;
+    width: 400px;
+    margin: 10px 90px;
+    padding: 10px;
+
+}
+
 /* box model  */
+
+
 #boxModel p{
     text-align: center;
 
@@ -82,6 +111,7 @@ tr .code {
 h2{
     color:#BC83A3;
     font-size: 40px;
+    font-family: playfair-Bold, Arial, Helvetica, sans-serif;
 }
 
 
@@ -132,10 +162,18 @@ h3{
 table tr th, td {
 color:#477AA5;
 background-color: #fddee3;
-font-size: 25px;
+font-size: 20px;
 text-align: justify;
 border: none;
+letter-spacing: 1px;
 
+}
+table tr th{
+    font-family: playfair-Bold, Arial, Helvetica, sans-serif;
+}
+table tr td{
+    font-family: playfair;
+    font-style: normal;
 }
 table{
     margin: 50px;
@@ -145,6 +183,10 @@ table{
 
 
 /* display & position  */
+#display{
+    
+top: 40px;
+}
 
  th, tr, td{
 
@@ -161,7 +203,8 @@ table{
     background-color: hsl(351, 100%, 86%);
     height: 20px;
     width: 20px;
-    margin-right: 50px;
+    margin: 10px 90px;
+    
   }
 
   #typo code{
@@ -170,3 +213,36 @@ table{
   }
   
   /* end */
+  .block{
+      position:sticky;
+  }
+
+  /* footer */
+  footer{
+      height: 75px;
+      width: auto;
+      background-color: #477AA5;
+      font-size: 20px;
+      
+      
+    
+  }
+footer p{
+    color:#F4ABB7; 
+    font-size: 25px;
+    text-align: right;
+    padding: 20px 0;
+   float: left;
+   font-family: 'Encode Sans Expanded', sans-serif;
+
+}
+.left{
+ text-align: left;  
+ font-family: 'Encode Sans Expanded', sans-serif;
+ 
+}
+footer a {
+    text-decoration: none;
+    color:#F4ABB7; 
+
+}
